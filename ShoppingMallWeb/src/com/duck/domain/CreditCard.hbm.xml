@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/3/26 ?U?? 01:16:32 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.duck.domain.CreditCard" table="CreditCard">
+        <id name="creditCardId" type="java.lang.Integer">
+            <column name="credit_card_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="validateNo" type="java.lang.String">
+            <column name="validate_no" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="type" />
+        </property>
+        <property name="cardholder" type="java.lang.String">
+            <column name="cardholder" />
+        </property>
+        <property name="cardNo" type="java.lang.String">
+            <column name="card_no" />
+        </property>
+        <property name="expireDate" type="java.util.Date">
+            <column name="expire_date" />
+        </property>
+    </class>
+</hibernate-mapping>

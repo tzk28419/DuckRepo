@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/3/26 ?U?? 01:03:08 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.duck.domain.FAQ" table="FAQ">
+        <id name="faqId" type="java.lang.Integer">
+            <column name="faq_id" />
+            <generator class="native" />
+        </id>
+        <property name="question" type="java.lang.String">
+            <column name="question" />
+        </property>
+        <property name="answer" type="java.lang.String">
+            <column name="answer" />
+        </property>
+    </class>
+</hibernate-mapping>
